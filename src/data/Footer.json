@@ -1,0 +1,26 @@
+
+ [
+    {
+        "id" : 0,
+        "title" : "INFORMATION",       
+        "desc" : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+     },
+    {
+        "id" : 1,
+        "title" : "MY ACCOUNT",
+        "desc" : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+        
+    },
+    {
+        "id" : 2,
+        "title" : "ABOUT",
+        "desc" : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+    },
+    {
+        "id" : 3,
+        "title" : "CONTACTS",
+        "desc" : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+    }
+]
+
+

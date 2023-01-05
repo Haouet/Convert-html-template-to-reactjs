@@ -1,0 +1,34 @@
+
+ [
+    {
+        "id" : 0,
+        "title" : "Specimen book. It has survived not only one",
+        "Like" : 5,
+        "Comment" : 0 ,
+        "img" : "images/news_img1.jpg",
+        "date": "7 Janvier 2023",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        "id" : 1,
+        "title" : "Specimen book. It has survived not only two",
+        "Like" : 6,
+        "Comment" : 3,
+         "img" : "images/news_img3.jpg",
+        "date": "6 Janvier 2023",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+   
+    },
+    {
+        "id" : 2,
+        "title" : "Specimen book. It has survived not only five",
+        "Like" : 10,
+        "Comment" : 20,
+        "img" : "images/news_img2.jpg",
+        "date": "10 Janvier 2023",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+   
+    }
+]
+
+

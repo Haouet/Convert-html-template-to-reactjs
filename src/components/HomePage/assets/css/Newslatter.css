@@ -1,0 +1,45 @@
+/** newslatter section **/
+
+.newslatter {
+    background-color: #fff;
+    padding: 90px 0;
+}
+
+.neslatter {
+    color: #141414;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: left;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+.news_form {
+    text-align: right;
+}
+
+.news_form .letter_form {
+    height: 54px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    border-radius: 32px;
+    border: #a8a8a8 solid 1px;
+}
+
+.news_form .sumbit {
+    padding: 5px 42px;
+    margin-left: -180px !important;
+    font-size: 17px;
+    background: #183661;
+    color: #fff;
+    border-radius: 30px;
+    z-index: 9999;
+}
+
+.news_form .sumbit:hover {
+    background-color: #f2c119;
+}
+
+
+/** end newslatter section **/

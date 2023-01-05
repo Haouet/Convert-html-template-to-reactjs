@@ -1,24 +1,66 @@
-import logo from './logo.svg';
+
+import  { useEffect, useState } from 'react'
 import './App.css';
+import { Routes, Route} from "react-router-dom";
+import HomePage from './components/HomePage/HomePage';
+import HeaderBottom from './components/HomePage/HeaderBottom';
+import HeaderMidil from './components/HomePage/HeaderMidil';
+import Loader from './components/HomePage/Loader';
+import TopHeader from './components/HomePage/TopHeader';
+import About from './components/AboutPage/About';
+import Footer from './components/HomePage/Footer';
+import ThreeBox from './components/HomePage/ThreeBox'
+import ProductPage from './components/ProductsPage/ProductPage';
 
 function App() {
+  const [loading, setLoading] = useState(true);  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);  
+    }, 3000);
+    return () => clearTimeout(timer);
+      
+}, []);  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>   
+        {loading && <div><Loader/> </div>} 
+      {!loading  && (
+        <>
+      <div className="header">
+      <TopHeader />
+      </div>
+      <div className='header_midil'>
+      <HeaderMidil/>
+       </div>
+       <div className='header_bottom'> 
+       <HeaderBottom />
+       </div>  
+      
+      <Routes>
+                <Route exact path="/" element={<HomePage />} />
+                {/* <Route exact path="/category/:name" element={} />
+                <Route path="/contact" element={} />
+                <Route path="/card" element={} />
+                <Route path="/shop" element={} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/details/:id" element={<Deatils />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="*" element={<Error />} />
+                <Route path="/back/addproduct" element={<AddProduct/>} /> */}
+                <Route path="/about" element={<About/>} />
+                <Route path="/products" element={<ProductPage/>} />
+     </Routes>
+     <div className='three_box'> 
+         <ThreeBox/>
+         </div>
+     <div className='footer'>
+       <Footer />
+         </div>
+        
+     </>
+     )}
+    </>
   );
 }
 

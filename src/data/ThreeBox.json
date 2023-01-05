@@ -1,0 +1,21 @@
+
+ [
+    {
+        "id" : 0,
+        "title" : "Money Back",       
+        "img" : "images/icon_mony.png"
+     },
+    {
+        "id" : 1,
+        "title" : "Special Gift",
+        "img" : "images/icon_gift.png"
+        
+    },
+    {
+        "id" : 2,
+        "title" : "Free Shipping",
+        "img" : "images/icon_car.png"
+    }
+]
+
+

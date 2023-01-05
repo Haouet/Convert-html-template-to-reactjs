@@ -1,0 +1,49 @@
+
+.blue_bg {
+    background-color: #f3a20d;
+    padding: 35px 0;
+}
+
+.blue_bg .titlepage {
+    text-align: center;
+}
+
+/** about page **/
+
+.about_page .blue_bg .titlepage h2 {
+    color: #fff;
+}
+
+.about {
+    background-color: #fff;
+    padding: 60px 0 50px 0;
+}
+
+.about_text h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #183661;
+    padding: 0;
+}
+
+.about_text p {
+    color: #000;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 25px 0 40px 0;
+}
+
+.about_text .read_more {
+    background: #183661;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.about_text .read_more:hover {
+    background: #f2c119;
+}
+
+
+/** about page **/
