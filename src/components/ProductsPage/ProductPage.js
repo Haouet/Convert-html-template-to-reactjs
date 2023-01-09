@@ -1,4 +1,3 @@
-import React from 'react'
 import Product from '../HomePage/Product'
 import './assets/css/Project.css'
 import data from "../../data/Data.json"
@@ -9,32 +8,32 @@ function ProductPage() {
    console.log(listProducts);
   return (
     <>
-     <div class="blue_bg">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
+     <div className="blue_bg">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="titlepage">
                      <h2>Products</h2>
                   </div>
                </div>
             </div>
          </div>
       </div>
-    <div className="row">
-    <div className="product_main">              
+    <div classNameName="row">
+    <div classNameName="product_main">             
     
              {listProducts?.map(item => (
                 
-                <div className='project_box'>   
-                <div className="col-xs-3" >                        
+                <div classNameName='project_box'>   
+                <div classNameName="col-xs-3" >                        
                 <Product key={item.id} {...item} />
                  </div>  </div>
               
              ))}
       
       </div>
-       <div className="col-md-12">
-          <a className="read_more" href="#">See More</a>
+       <div classNameName="col-md-12">
+          <a classNameName="read_more" href="#">See More</a>
        </div>
    
  </div>
