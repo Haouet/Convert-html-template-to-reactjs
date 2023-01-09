@@ -11,6 +11,10 @@ import About from './components/AboutPage/About';
 import Footer from './components/HomePage/Footer';
 import ThreeBox from './components/HomePage/ThreeBox'
 import ProductPage from './components/ProductsPage/ProductPage';
+import ContactPage from './components/ContactPage/ContactPage';
+import NewsPage from './components/NewsPge/NewsPage';
+import Error from './Error';
+import FashionPage from './components/FashionPage/FashionPage';
 
 function App() {
   const [loading, setLoading] = useState(true);  
@@ -46,10 +50,14 @@ function App() {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/details/:id" element={<Deatils />} />
                 <Route path="/checkout" element={<Checkout />} />
-                <Route path="*" element={<Error />} />
+                
                 <Route path="/back/addproduct" element={<AddProduct/>} /> */}
-                <Route path="/about" element={<About/>} />
+                <Route path="/about" element={<About/>} />               
                 <Route path="/products" element={<ProductPage/>} />
+                <Route path="/fashion" element={<FashionPage/>} />
+                <Route path="/news" element={<NewsPage/>} />
+                <Route path="/contact" element={<ContactPage/>} />
+                <Route path="*" element={<Error />} />
      </Routes>
      <div className='three_box'> 
          <ThreeBox/>

@@ -225,3 +225,19 @@ button {
      color: #fff !important;
      transition: ease-in all 0.5s;
 }
+
+
+.project_page .blue_bg .titlepage h2 {
+     color: #fff;
+}
+
+.news_page .blue_bg .titlepage h2 {
+     color: #fff;
+}
+
+.news_page .news {
+     padding: 50px 0 90px 0;
+}
+.footer_to90 .footer {
+     padding-top: 90px;
+}
