@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import './assets/css/ContactPage.css'
+import './assets/css/ContactPage.css';
+import TitlePage from '../TitlePage';
 function ContactPage() {
 
   const [email, setEmail] = useState('');
@@ -27,17 +28,9 @@ function ContactPage() {
 
   return (
     <>
-      <div className="blue_bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="titlepage">
-                <h2>Contact Us</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   <TitlePage>
+      <h2>Contact Us</h2>
+      </TitlePage>
 
       <div id="contact" className="contact">
         <div className="con_bg">
