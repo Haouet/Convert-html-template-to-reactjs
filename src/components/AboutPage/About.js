@@ -5,7 +5,11 @@ import './assets/css/About.css'
 function About() {
   return (
     <>
-    <TitlePage />
+    <TitlePage >
+   
+      <h2>About</h2>
+      
+    </TitlePage>
     <div class="about">
     <div class="container">
        <div class="row">

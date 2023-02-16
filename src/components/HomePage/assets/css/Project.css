@@ -65,5 +65,15 @@
 .fashion img {
     width: 100%;
 }
+.addCart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 15px 32px;
+    border-radius: 12px;
+    background-color: #183661;
 
+
+}
 /** end project section **/

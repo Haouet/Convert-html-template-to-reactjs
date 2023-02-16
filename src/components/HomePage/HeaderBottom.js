@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react';
 import {Link} from "react-router-dom";
 
 const HeaderBottom = () => {
+   const [Search, setSearch] = useState("");
   return (
     <div className="container">
                   <div className="row">
@@ -11,7 +13,7 @@ const HeaderBottom = () => {
                            </button>
                            <div className="collapse navbar-collapse" id="navbarsExample04">
                               <ul className="navbar-nav mr-auto">
-                                 <li className="nav-item active">
+                                 <li className="nav-item">
                                  <Link to={`/`} className="nav-link" >Home</Link>
                                  </li>
                                  <li className="nav-item">
@@ -36,7 +38,11 @@ const HeaderBottom = () => {
                      <div className="col-md-4">
                         <div className="search">
                            <form action="/action_page.php">
-                              <input className="form_sea" type="text" placeholder="Search" name="search"/>
+                              <input className="form_sea" type="text" placeholder="Search" name="search" 
+                               onChange={(e) => {
+                                 setSearch(e.target.value)
+                             }}
+                              />
                               <button type="submit" className="seach_icon"><i className="fa fa-search"></i></button>
                            </form>
                         </div>
