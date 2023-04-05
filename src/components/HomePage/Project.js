@@ -10,6 +10,7 @@ const Project = () => {
    console.log(listProducts);
 
    return (
+      <>
       <div className="container">
          <div className="row">
             <div className="col-md-12">
@@ -18,25 +19,25 @@ const Project = () => {
                </div>
             </div>
          </div>
-         <div className="row">
-            <div className="product_main">              
-            
-                     {listProducts?.map(item => (
-                        
-                        <div className='project_box'>   
-                        <div className="col-xs-3" >                        
+      </div>
+         <div className="container">   
+             <div className="product_main">
+                  <div className='row'>              
+                     {listProducts?.map(item => (                     
+                        <div className="col-md-3" >                        
                         <Product key={item.id} {...item} />
-                         </div>  </div>
+                         </div>
                       
                      ))}
-              
+                  </div>
               </div>
-               <div className="col-md-12">
+               <div >
                   <a className="read_more" href="#">See More</a>
                </div>
-           
-         </div>
-      </div>
+            </div>
+            </> 
+       
+     
    )
 }
 
