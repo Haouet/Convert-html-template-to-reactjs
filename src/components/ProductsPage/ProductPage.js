@@ -12,18 +12,19 @@ function ProductPage() {
      <TitlePage>
       <h2>Product</h2>
       </TitlePage>
-   <div className="container">
-   
-            <div className="product_main">              
-            
-            {listProducts?.map(item => ( 
-                
-                <div className='project_box'>   
-                <div className="col-xs-3" >                       
-                <Product key={item.id} {...item} />
-                 </div> 
-                 </div> ))} 
+        
+         <div className="container">   
+            <div className="product_main">
+               <div className='row'>         
               
+            {listProducts?.map(item => (               
+               
+               <div className='col-md-3'>                      
+                <Product key={item.id} {...item} />
+                </div>
+                 ))} 
+               
+              </div>  
               </div>
                <div className="col-md-12">
                   <a className="read_more" href="#">See More</a>
@@ -31,7 +32,7 @@ function ProductPage() {
            
         
 
- </div>
+         </div>
  </>
   )
 }

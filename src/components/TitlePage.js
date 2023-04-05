@@ -34,6 +34,7 @@ function TitlePage({children}) {
                </div>
             </div>
          </div>
+         <br/>
       </>
 
    )
